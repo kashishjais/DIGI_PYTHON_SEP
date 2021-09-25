@@ -1,0 +1,24 @@
+'''python has 9 basic data types
+-int
+-bool
+-float
+-none
+-str
+-list
+-tuple
+-dict
+-set'''
+a=23
+print(a,type(a))
+a='23'
+print(a,type(a))
+a=True
+print(a,type(a))
+a=2.55555
+print(a,type(a))
+a=[1,2,3]
+print(a,type(a))
+a={'t':"fruit",'b':"vege"}
+print(a,type(a))
+a={1,3,4}
+print(a,type(a))
