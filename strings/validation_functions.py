@@ -14,6 +14,17 @@ print("is value printable on screen? ",ans)
 ans=value.isdigit()
 print("does value has only digits? ",ans)
 
+name="Dr ram"
+if name.startswith("Dr"):
+    print("hello doctor!")
+
+
+file=input("enter file name with extension ")
+if file.endswith(".exe"):
+    print("executable file")
+elif file.endswith(".pdf"):
+    print("pdf file")    
+    
 
 
 
