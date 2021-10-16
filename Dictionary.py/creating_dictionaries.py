@@ -1,0 +1,9 @@
+student=['billu',17,12,15,False,True,99999999999]
+stddict={'name':'billu',
+        'maths':15,
+        'english':18,
+        'science':17,
+        'hindi':19,
+        'age':18,
+        'study':False}
+print(stddict)
