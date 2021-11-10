@@ -20,7 +20,21 @@ def show_student_form():
         db.close()
         st.success("saved student details")   
 def show_grading_form():
-    pass
+    with st.form('f2'):
+        id=st.text_input("enter student id/rollno")
+        student=st.text_input("enter student name")
+        c1,c2,c3=st.columns(3)
+        hindi=c1.text_input("enter hindi marks")
+        english=c2.text_input("enter english marks")
+        maths=c3.text_input("enter maths marks")
+        total=st.text_input("enter total marks")
+        btn=st.form_submit_button("add grade")
+    if btn and id  and student and hindi and english and maths and total:
+        db=open_db()
+        db.add(Grade(id=id,student=student,hindi=hindi,english=english,maths=maths,total=total)) 
+        db.commit()
+        db.close()
+        st.success("saved student grades")       
 
 def show_students_data():
     db=open_db()
