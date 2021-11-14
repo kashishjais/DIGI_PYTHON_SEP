@@ -19,7 +19,7 @@ def extract_page_data(driver):
                 price = item.find_element_by_css_selector('div._30jeq3').text,
                 discount=item.find_element_by_css_selector('div._3Ay6Sb').text,
                 original_price=item.find_element_by_css_selector('div._3I9_wc').text,
-                ratings=item.find_element_by_css_selector('div._3LWZlK _3uSWvT').text,
+                ratings=item.find_element_by_css_selector('id.productRating_LSTBKPFB5MAGHQBVP2AOJ927Q_BKPFB5MAGHQBVP2A_').text,
             ))
     return data
 
