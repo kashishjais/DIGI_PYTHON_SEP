@@ -17,6 +17,9 @@ def extract_page_data(driver):
                 brand = item.find_element_by_css_selector('div._2WkVRV').text,
                 title = item.find_element_by_css_selector('a.IRpwTa').get_attribute('title'),
                 price = item.find_element_by_css_selector('div._30jeq3').text,
+                discount=item.find_element_by_css_selector('div._3Ay6Sb').text,
+                original_price=item.find_element_by_css_selector('div._3I9_wc').text,
+                ratings=item.find_element_by_css_selector('div._3LWZlK _3uSWvT').text,
             ))
     return data
 
